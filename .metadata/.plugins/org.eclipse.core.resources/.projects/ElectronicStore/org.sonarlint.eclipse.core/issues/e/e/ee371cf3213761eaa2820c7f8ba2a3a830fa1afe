@@ -1,0 +1,9 @@
+
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8…íë2b 0132ec8cee01c5dd244e1a60fe6448a1h
+
+java:S6204,"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'8¬ÚÌë2b f31c9542f92d797a57d6f9bafca179cdh
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8Áàğê2b 0132ec8cee01c5dd244e1a60fe6448a1h
+W
+java:S1116!"Remove this empty statement.8ß˜»ë2b 9eecb7db59d16c80417c72d1e1f4fbf1h

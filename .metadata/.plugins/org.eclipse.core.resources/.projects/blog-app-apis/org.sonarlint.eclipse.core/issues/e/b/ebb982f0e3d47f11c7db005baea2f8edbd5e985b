@@ -1,0 +1,10 @@
+
+ç
+java:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").b 8ed08050880ba528926ed26334e5e0adh
+ç
+java:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").b 8ed08050880ba528926ed26334e5e0adh
+ç
+java:S22939"YReplace the type specification in this constructor call with the diamond operator ("<>").b a02c5fe56649ef32344f6f1f7f012966h
+v
+java:S6813!"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+Å	java:S100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 1071e7138e40fa9905d2e5770b675553h

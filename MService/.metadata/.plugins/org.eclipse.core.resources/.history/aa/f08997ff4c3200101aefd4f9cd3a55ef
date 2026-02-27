@@ -1,0 +1,31 @@
+package com.question.serviceimpl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.question.entity.Question;
+import com.question.service.QuestionService;
+
+@Service
+public class QuestionServiceImpl implements QuestionService{
+
+	@Override
+	public Question createQuestion(Question question) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Question> getAllQuestion() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Question getQuestionById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

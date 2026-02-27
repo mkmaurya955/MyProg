@@ -1,0 +1,13 @@
+{
+  "custName":"Manish2",
+  "email":"Manish2@gmail.com",
+  "gender":"Male",
+  "product":[
+      {
+    "id":104,
+    "productName": "Shwwoes",
+    "price":"89.98",
+    "qty":"1"
+  }
+  ]
+}

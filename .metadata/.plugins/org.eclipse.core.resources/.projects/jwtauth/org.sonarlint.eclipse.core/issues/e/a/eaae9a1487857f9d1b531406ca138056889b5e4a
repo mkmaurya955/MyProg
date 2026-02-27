@@ -1,0 +1,14 @@
+
+a
+java:S1452"&Remove usage of generic wildcard type.8•Àì€2b d1457b72c3fb323a2671125aef3eab5dh
+e	java:S106"+Replace this use of System.out by a logger.8øí€2b bb1c3f2ea781263d3a2bb92b06a2061fh
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8…óò€2b 0132ec8cee01c5dd244e1a60fe6448a1h
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8…óò€2b 0132ec8cee01c5dd244e1a60fe6448a1h
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8…óò€2b 0132ec8cee01c5dd244e1a60fe6448a1h
+€	java:S112"FDefine and throw a dedicated exception instead of using a generic one.8šˆü€2b b0d4998a26f5b5742ad38c4af8817e32h
+e	java:S106,"+Replace this use of System.out by a logger.8È¤ƒ€2b bb1c3f2ea781263d3a2bb92b06a2061fh
+Ÿ
+java:S1128"dRemove this unused import 'org.springframework.security.core.userdetails.UsernameNotFoundException'.8ÄÔí€2b 2b82c3b492f12f73e931611060137510h

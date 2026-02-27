@@ -1,0 +1,13 @@
+
+c
+java:S5411Q"(Use a primitive boolean expression here.8ύλΰ€2b 12d713c97fd5d78c8f3254004c80da84h
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8ύλΰ€2b 0132ec8cee01c5dd244e1a60fe6448a1h
+r
+java:S2387"7"logger" is the name of a field in "GenericFilterBean".8ύλΰ€2b 6db435f352d7ea4a67807a3feb447bf7h
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8ύλΰ€2b 0132ec8cee01c5dd244e1a60fe6448a1h
+
+java:S3776#"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.8ύλΰ€2b e10718efd52407198909f8b7126ec6cch
+v	java:S125/"<This block of commented-out lines of code should be removed.8Νμ‹2b 0635e27a5f204b7688f849d64832ea9ah
+v	java:S125&"<This block of commented-out lines of code should be removed.8ύλΰ€2b 80d5b17efc16ace990c07580fc3e85ebh

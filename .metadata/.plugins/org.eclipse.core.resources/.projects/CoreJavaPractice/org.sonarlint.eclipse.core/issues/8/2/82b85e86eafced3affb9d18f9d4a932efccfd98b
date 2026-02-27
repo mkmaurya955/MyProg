@@ -1,0 +1,7 @@
+
+u
+java:S1161":Add the "@Override" annotation above this method signature8•ä“2b a53108f7543b75adbb34afc035d4cdf6h
+e	java:S106"+Replace this use of System.out by a logger.8•ä“2b bb1c3f2ea781263d3a2bb92b06a2061fh
+c
+java:S1172"(Remove this unused method parameter "j".8ê™ğ“2b 363b122c528f54df4a0446b6bab05515h
+e	java:S106"+Replace this use of System.out by a logger.8ê™ğ“2b bb1c3f2ea781263d3a2bb92b06a2061fh

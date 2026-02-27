@@ -1,0 +1,13 @@
+
+\
+java:S5411?"(Use a primitive boolean expression here.b 12d713c97fd5d78c8f3254004c80da84h
+k
+java:S2387"7"logger" is the name of a field in "GenericFilterBean".b 6db435f352d7ea4a67807a3feb447bf7h
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+n
+java:S3416":Update this logger to use "JwtAuthenticationFilter.class".b eeeb955fcd7bd4ebf60e1f399cdcc70bh
+†
+java:S3776#"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.b e10718efd52407198909f8b7126ec6cch

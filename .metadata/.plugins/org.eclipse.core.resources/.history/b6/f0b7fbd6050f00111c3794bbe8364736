@@ -1,0 +1,166 @@
+package com.blog.api.config;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class Interview {
+
+	public static void main(String[] args) {
+
+		List<String> inputList = Arrays.asList("ABC", "XYZ", "6YT", "123", "UUI", "SSI", "978", "895");
+
+		List<String> collect2 = inputList.stream().filter(e -> e.chars().allMatch(Character::isDigit))
+				.collect(Collectors.toList());
+
+		System.out.println(collect2);
+
+		HashMap<String, Integer> books = new HashMap<>();
+		books.put("Java", 500);
+		books.put("HTML", 300);
+		books.put("CSS", 200);
+		books.put("Python", 800);
+		books.put(".Net", 600);
+
+		LinkedHashMap<String, Integer> collect12 = books.entrySet().stream().sorted(Map.Entry.comparingByValue())
+				.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (oldVal, newVal) -> newVal,
+						LinkedHashMap::new));
+
+		System.out.println(collect12);
+
+		String input = "XYZDEHTYIAOOSHNBDR";
+
+		List<Character> collect = input.chars().mapToObj(c -> (char) c).sorted().collect(Collectors.toList());
+
+		System.out.println(collect);
+
+		String str = "MY NAME IS MANISH";
+
+		LinkedHashMap<Character, Long> collect1 = str.replace(" ", "").chars().mapToObj(c -> (char) c)
+				.collect(Collectors.groupingBy(c -> c, LinkedHashMap::new, Collectors.counting()));
+		System.out.println(collect1);
+
+		class Employee {
+			String name;
+			int id;
+			int age;
+			int salary;
+
+			Employee(String name, int id, int age, int salary) {
+				this.name = name;
+				this.id = id;
+				this.age = age;
+				this.salary = salary;
+			}
+
+			@Override
+			public String toString() {
+				return "Employee [name=" + name + ", id=" + id + ", age=" + age + ", salary=" + salary + "]";
+			}
+
+			public String getName() {
+				return name;
+			}
+
+			public void setName(String name) {
+				this.name = name;
+			}
+
+			public int getId() {
+				return id;
+			}
+
+			public void setId(int id) {
+				this.id = id;
+			}
+
+			public int getAge() {
+				return age;
+			}
+
+			public void setAge(int age) {
+				this.age = age;
+			}
+
+			public int getSalary() {
+				return salary;
+			}
+
+			public void setSalary(int salary) {
+				this.salary = salary;
+			}
+		}
+
+		List<Employee> employees = new ArrayList<>();
+
+		employees.add(new Employee("John", 101, 45, 90000));
+		employees.add(new Employee("Alice", 102, 52, 120000));
+		employees.add(new Employee("Robert", 103, 38, 80000));
+		employees.add(new Employee("David", 104, 59, 110000));
+		employees.add(new Employee("Sophia", 105, 41, 95000));
+		employees.add(new Employee("Michael", 106, 62, 130000));
+		employees.add(new Employee("Emma", 107, 48, 115000));
+		employees.add(new Employee("Daniel", 108, 55, 105000));
+		employees.add(new Employee("Olivia", 109, 43, 99000));
+		employees.add(new Employee("James", 110, 60, 125000));
+
+		List<String> collect11 = employees.stream().filter(e -> e.getAge() > 40 && e.getAge() < 60)
+				.sorted(Collections.reverseOrder(Comparator.comparing(Employee::getSalary))).map(Employee::getName)
+				.limit(2).collect(Collectors.toList());
+		String string = collect11.get(1);
+//        OR
+//        System.out.println(string);
+		String name = employees.stream().filter(e -> e.getAge() > 40 && e.getAge() < 60)
+				.sorted(Collections.reverseOrder(Comparator.comparing(Employee::getSalary))).map(Employee::getName)
+				.skip(1).findFirst().orElse(null);
+//    	or
+		String name1 = employees.stream().filter(e -> e.getAge() > 40 && e.getAge() < 60)
+				.sorted(Collections.reverseOrder(Comparator.comparing(Employee::getSalary))).map(Employee::getName)
+				.skip(1).limit(1).findFirst().get();
+
+		System.out.println(name1);
+
+//      solve the problem of printing the starting index and last index of duplicate integer in an array.
+		int[] a = { 1, 2, 3, 4, 9, 9, 9, 10 };
+		int start = -1;
+		int end = -1;
+//		for(int i=0;i<a.length;i++) {
+//			for(int j=i+1;j<a.length;j++) {
+//				if(a[i]==a[j]) {
+//					if (start == -1) {
+//		                start = i;
+//		            }
+//		            end = j;
+//				}
+//			}
+//		}
+
+		for (int i = 0; i < a.length - 1; i++) {
+			if (a[i] == a[i + 1]) {
+				if (start == -1) {
+					start = i;
+				}
+				end = i + 1;
+			}
+		}
+
+		System.out.println("Start index: " + start);
+		System.out.println("End index: " + end);
+
+		String str1 = "madam";
+
+		String reversed = str1.chars().mapToObj(c -> (char) c)
+				.collect(StringBuilder::new, StringBuilder::append, StringBuilder::append).reverse().toString();
+
+		boolean equals = str1.equals(reversed);
+
+		System.out.println("Is Palindrome : " + equals);
+	}
+
+}

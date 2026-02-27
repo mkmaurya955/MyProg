@@ -1,0 +1,8 @@
+
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+t
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.b 91ec1f9324753048c0096d036a694f86h
+Å	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 9f453c36dae9ee39b47b671c14c58fbah
+t
+java:S4684!"@Replace this persistent entity with a simple POJO or DTO object.b 91ec1f9324753048c0096d036a694f86h

@@ -1,0 +1,16 @@
+
+ç
+java:S22936"YReplace the type specification in this constructor call with the diamond operator ("<>").b 48d2b2595c2efe7d84ca119b1031f548h
+ç
+java:S2293J"YReplace the type specification in this constructor call with the diamond operator ("<>").b 9c67418828239e46ade7f2ff69ec402ch
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813!"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813%"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+o	java:S125("<This block of commented-out lines of code should be removed.b e47f1802deb1f2c48c54c35d8090ac8ah
+^	java:S106."+Replace this use of System.out by a logger.b bb1c3f2ea781263d3a2bb92b06a2061fh
+^	java:S1060"+Replace this use of System.out by a logger.b bb1c3f2ea781263d3a2bb92b06a2061fh

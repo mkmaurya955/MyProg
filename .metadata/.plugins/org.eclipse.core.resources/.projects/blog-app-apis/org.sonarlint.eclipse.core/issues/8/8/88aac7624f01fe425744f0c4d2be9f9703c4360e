@@ -1,0 +1,20 @@
+
+v
+java:S6813%"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813'"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813*"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813-"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+Q
+java:S2386"Make this member "protected".b cf056f266704a717f88894ba3b744098h
+Ž
+java:S3305&"ZInject this field value directly into "securityFilterChain", the only method that uses it.b 78ee54aa8f813885fe2fe20d232518b9h
+Ž
+java:S3305("ZInject this field value directly into "securityFilterChain", the only method that uses it.b b2c97ae425dd751b0e48a3acae79cf4ah
+”
+java:S3305+"`Inject this field value directly into "daoAuthenticationProvider", the only method that uses it.b 010ac1b919b408103fdf7e3c0ac41c10h
+”
+java:S3305."`Inject this field value directly into "daoAuthenticationProvider", the only method that uses it.b 654fd4eaf582ccb05404ae81f4b16618h
+o	java:S125"<This block of commented-out lines of code should be removed.b 94434bab05fdaf11c00ad455471dab9dh

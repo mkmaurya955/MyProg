@@ -1,0 +1,51 @@
+server:
+  port: 9099
+  
+spring:
+  application:
+    name: ApiGatway
+    
+#  cloud:
+#    gateway:
+#      routes:
+#      - id: HotelService
+#        uri: http://localhost:9093
+#        predicates:
+#        - Path=/users/**
+
+  cloud:
+    gateway:
+      routes:
+      - id: USER-SERVICE
+        uri: lb://USER-SERVICE
+        predicates:
+        - Path=/users/**
+        
+      - id: HotelService
+        uri: lb://HotelService
+        predicates:
+        - Path=/hotels/**
+        
+      - id: RATE-SERVICE
+        uri: lb://RATE-SERVICE
+        predicates:
+        - Path=/rating/**
+
+# Service Registry (Discovery Eureka Server) config for enable to this service
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#    fetch-registry: true
+#    register-with-eureka: true
+#  instance:
+#    prefer-ip-address: true
+#    ip-address: 192.168.1.33
+#spring.cloud.config.import-check.enabled=false
+
+  config:
+    import: optional:configserver:http://localhost:9094
+
+    
+    

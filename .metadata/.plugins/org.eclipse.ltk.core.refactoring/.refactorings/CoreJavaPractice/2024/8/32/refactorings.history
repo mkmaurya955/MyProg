@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;comparatorandcomparable.MyComparator&apos; to &apos;NameComparator&apos;&#x0D;&#x0A;- Original project: &apos;CoreJavaPractice&apos;&#x0D;&#x0A;- Original element: &apos;comparatorandcomparable.MyComparator&apos;&#x0D;&#x0A;- Renamed element: &apos;comparatorandcomparable.NameComparator&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MyComparator&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;comparatorandcomparable{MyComparator.java[MyComparator" matchStrategy="1" name="NameComparator" qualified="false" references="true" similarDeclarations="false" stamp="1722852806131" textual="false" version="1.0"/>
+</session>

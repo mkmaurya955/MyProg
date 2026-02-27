@@ -1,0 +1,11 @@
+
+e	java:S106"+Replace this use of System.out by a logger.8§šªÓ½2b bb1c3f2ea781263d3a2bb92b06a2061fh
+s
+java:S3878"8Remove this array creation and simply pass the elements.8§šªÓ½2b 35a0d339d7c9f747409d58a8b250abb9h
+e	java:S106"+Replace this use of System.out by a logger.8§šªÓ½2b bb1c3f2ea781263d3a2bb92b06a2061fh
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 2863bc264d070388a94111bc05f77f0fh
+s
+java:S3878 "8Remove this array creation and simply pass the elements.8§šªÓ½2b 4d00089e04b1a7a827b394d74c1954dch
+s
+java:S3878!"8Remove this array creation and simply pass the elements.8§šªÓ½2b 5190be66be6566fbad4071eeffeb5e89h
+e	java:S106"+Replace this use of System.out by a logger.8§šªÓ½2b bb1c3f2ea781263d3a2bb92b06a2061fh

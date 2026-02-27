@@ -1,0 +1,28 @@
+package Test;
+
+public class TestExample {
+
+	private static int counter = 0;
+
+	void TestExample() {
+		counter = 20;
+	}
+
+	TestExample(int x) {
+		counter = x;
+	}
+
+	TestExample(int x, int y) {
+		counter = x;
+	}
+
+	TestExample(int x, int y, int z) {
+		counter = y;
+	}
+
+	public static void main(String[] args) {
+//		TestExample TestHello = new TestExample();
+		System.out.println(counter);
+	}
+
+}

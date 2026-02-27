@@ -1,0 +1,51 @@
+spring.application.name=api-gateway
+
+server.port=9000
+
+#Deprecated
+#spring.cloud.gateway.routes[0].id=product-service
+#spring.cloud.gateway.routes[0].uri=lb://USER-SERVICE
+#spring.cloud.gateway.routes[0].predicates[0]=Path=/users/**
+
+#spring.cloud.gateway.routes → deprecated
+#spring.cloud.gateway.server.webflux.routes → current & correct
+#Spring Cloud Gateway is WebFlux-only, so the config moved under server.webflux
+
+#spring.cloud.gateway.server.webflux.routes[0].id=user-service
+#spring.cloud.gateway.server.webflux.routes[0].uri=lb://USER-SERVICE  //If you are using service discovery (Eureka / Consul)
+#spring.cloud.gateway.server.webflux.routes[0].predicates[0]=Path=/users/**
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+spring.cloud.gateway.server.webflux.discovery.locator.lower-case-service-id=true
+spring.cloud.gateway.server.webflux.discovery.locator.enabled=true
+
+# PRODUCT SERVICE
+spring.cloud.gateway.server.webflux.routes[0].id=product-service
+spring.cloud.gateway.server.webflux.routes[0].uri=http://localhost:8081
+spring.cloud.gateway.server.webflux.routes[0].predicates[0]=Path=/category/**,/product/**
+# Circuit Breaker filter configuration
+spring.cloud.gateway.server.webflux.routes[0].filters[0].name=CircuitBreaker
+spring.cloud.gateway.server.webflux.routes[0].filters[0].args.name=productServiceCircuitBreaker
+spring.cloud.gateway.server.webflux.routes[0].filters[0].args.fallbackUri=forward:/fallback/product
+
+# ORDER SERVICE
+spring.cloud.gateway.server.webflux.routes[1].id=order-service
+spring.cloud.gateway.server.webflux.routes[1].uri=http://localhost:8082
+spring.cloud.gateway.server.webflux.routes[1].predicates[0]=Path=/orders/**
+
+# PAYMENT SERVICE
+spring.cloud.gateway.server.webflux.routes[2].id=payment-service
+spring.cloud.gateway.server.webflux.routes[2].uri=http://localhost:8083
+spring.cloud.gateway.server.webflux.routes[2].predicates[0]=Path=/payments/**
+
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+spring.cloud.gateway.server.webflux.discovery.locator.lower-case-service-id=true
+spring.cloud.gateway.server.webflux.discovery.locator.enabled=true
+
+# Additional filters if needed (example: Add Request Rate Limiter)
+# spring.cloud.gateway.routes[0].filters[1].name=RequestRateLimiter
+# spring.cloud.gateway.routes[0].filters[1].args.redis-rate-limiter.replenishRate=10
+# spring.cloud.gateway.routes[0].filters[1].args.redis-rate-limiter.burstCapacity=20
+# spring.cloud.gateway.routes[0].filters[1].args.key-resolver=#{@userKeyResolver}
+
+
+

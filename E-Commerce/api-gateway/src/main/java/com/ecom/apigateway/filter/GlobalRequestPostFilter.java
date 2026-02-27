@@ -1,0 +1,54 @@
+
+package com.ecom.apigateway.filter;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.cloud.gateway.filter.GatewayFilterChain;
+import org.springframework.cloud.gateway.filter.GlobalFilter;
+import org.springframework.core.Ordered;
+import org.springframework.http.server.reactive.ServerHttpResponse;
+import org.springframework.stereotype.Component;
+import org.springframework.web.server.ServerWebExchange;
+
+import reactor.core.publisher.Mono;
+
+@Component
+public class GlobalRequestPostFilter implements GlobalFilter, Ordered {
+
+	private static final Logger logger = LoggerFactory.getLogger(GlobalRequestPostFilter.class);
+
+	// private final AESUtil aesUtil;
+	// @Value("${app.domains}")
+	// private String appDomain;
+
+	@Override
+	public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
+		
+		// Store the original response
+		return chain.filter(exchange).then(Mono.fromRunnable(() -> {
+			// ---------------- ADD HEADERS ----------------
+			ServerHttpResponse response = exchange.getResponse();
+//			HttpHeaders headers = response.getHeaders();
+//			headers.add("access-control-allow-origin", appDomain);
+//			headers.add("access-control-allow-headers",
+//					"Content-Type, Authorization, X-Requested-With, Accept, Origin");
+//			headers.add("access-control-allow-methods", "GET, POST, PUT, DELETE");
+//			headers.add("Content-Security-Policy", "default-src 'self'; script-src 'self'; object-src 'none';");
+//			headers.add("Permissions-Policy", "geolocation=(), microphone=(), camera=(), payment=()");
+			// ---------------- LOGGING ----------------
+			Long start = exchange.getAttribute("startTime");
+			long duration = start == null ? 0 : System.currentTimeMillis() - start;
+			logger.info("POST FILTER → Status={} | Time={}ms | Path={}", response.getStatusCode(), duration,
+					exchange.getRequest().getURI());
+		}));
+
+	}
+
+	@Override 
+	public int getOrder() { 
+		return 2; // run after routing 
+		}
+	
+	
+  
+  }

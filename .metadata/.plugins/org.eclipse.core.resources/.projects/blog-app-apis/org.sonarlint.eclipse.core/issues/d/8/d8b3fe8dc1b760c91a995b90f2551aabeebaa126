@@ -1,0 +1,11 @@
+
+[
+java:S19487"'Make "posts" transient or serializable.b 18958e30bdca0cfac8256824e570a89bh
+^
+java:S1948;"*Make "comments" transient or serializable.b a5d491060952aa8ad5fdee071be752deh
+[
+java:S1948?"'Make "roles" transient or serializable.b 4295e8065f2f640103f566df3329e17fh
+†
+java:S6204U"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'b f31c9542f92d797a57d6f9bafca179cdh
+f
+java:S1611U"2Remove the parentheses around the "role" parameterb 84c40473414caf2ed4a7b1283e48bbf4h

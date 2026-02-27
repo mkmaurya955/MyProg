@@ -1,0 +1,11 @@
+1767636951444	Rename package 'com.ecom.product_service'
+1767636968473	Rename package 'com.ecom.product_service.repository'
+1767636979403	Rename package 'com.ecom.product_service.entity'
+1767636989027	Rename package 'com.ecom.product_service.controller'
+1767638487039	Delete element
+1767672822589	Rename type 'CategoryRepository'
+1767698717274	Delete element
+1767698723320	Delete element
+1767698729539	Delete element
+1767703242036	Rename type 'CategoryProductResponse'
+1767704412619	Delete element

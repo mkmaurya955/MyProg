@@ -1,0 +1,125 @@
+
+package com.ecom.apigateway.filter;
+
+import java.util.Date;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.cloud.gateway.filter.GatewayFilterChain;
+import org.springframework.cloud.gateway.filter.GlobalFilter;
+import org.springframework.core.Ordered;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.server.reactive.ServerHttpResponse;
+import org.springframework.stereotype.Component;
+import org.springframework.web.server.ServerWebExchange;
+
+import reactor.core.publisher.Mono;
+
+@Component
+public class GlobalRequestPostFilter implements GlobalFilter, Ordered {
+
+	private static final Logger logger = LoggerFactory.getLogger(GlobalRequestPostFilter.class);
+
+	// private final AESUtil aesUtil;
+	// @Value("${app.domains}")
+	// private String appDomain;
+
+    @Override
+    public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
+        logger.info("Start processing request at {}", new Date());
+        
+        // Store the original response
+        ServerHttpResponse originalResponse = exchange.getResponse();
+        
+        // Create a new response decorator to intercept the body
+        BodyCaptureResponse responseDecorator = new BodyCaptureResponse(originalResponse);
+        
+        // Replace the response in the exchange
+        ServerWebExchange mutatedExchange = exchange.mutate().response(responseDecorator).build();
+        
+        return chain.filter(mutatedExchange)
+            .then(Mono.defer(() -> {
+                return processResponse(exchange, responseDecorator);
+            }));
+    }
+    
+    private Mono<Void> processResponse(ServerWebExchange exchange, BodyCaptureResponse responseDecorator) {
+        try {
+            ServerHttpRequest request = exchange.getRequest();
+            ServerHttpResponse response = exchange.getResponse();
+            
+            // Get username from request attribute (set by previous filter)
+            String uname = exchange.getAttribute("UNAMEATTR");
+            
+            // Add CORS headers
+            addCorsHeaders(response);
+            
+            // Check if encryption is needed
+            String path = request.getURI().getPath();
+            boolean needsEncryption = !path.contains("/authenticate/") || path.contains("authenticatedTempPswrd");
+            
+            if (needsEncryption && (uname == null || 
+                (!"gbs_system".equalsIgnoreCase(uname) && !"system".equalsIgnoreCase(uname)))) {
+                
+                return encryptResponse(responseDecorator);
+            }
+            
+            logger.info("End processing request at {}", new Date());
+            return Mono.empty();
+            
+        } catch (Exception e) {
+            logger.error("Exception in processResponse method: {}", e.getMessage(), e);
+            return Mono.error(e);
+        }
+    }
+    
+    private void addCorsHeaders(ServerHttpResponse response) {
+        HttpHeaders headers = response.getHeaders();
+        
+        headers.add("access-control-allow-headers", 
+                   "Content-Type, Authorization, X-Requested-With, Accept, Origin");
+        headers.add("access-control-allow-methods", "GET, POST, PUT, DELETE");
+        headers.add("access-control-allow-origin", appDomain);
+        headers.add("access-control-allow-origins", appDomain);
+        headers.add("Content-Security-Policy", 
+                   "default-src 'self'; script-src 'self'; object-src 'none';");
+        headers.add("Permissions-Policy", 
+                   "geolocation=(), microphone=(), camera=(), payment=()");
+        headers.add("Cross-Origin-Resource-Policy", "same-origin");
+    }
+    
+    private Mono<Void> encryptResponse(BodyCaptureResponse responseDecorator) {
+        try {
+            byte[] responseBody = responseDecorator.getBody();
+            
+            if (responseBody != null && responseBody.length > 0) {
+                String originalBody = new String(responseBody, StandardCharsets.UTF_8);
+                logger.info("Encrypting response body");
+                
+                String encryptedBody = aesUtil.encrypt(originalBody);
+                
+                // Create new response data
+                byte[] encryptedBytes = encryptedBody.getBytes(StandardCharsets.UTF_8);
+                DataBuffer buffer = responseDecorator.getDelegate().bufferFactory().wrap(encryptedBytes);
+                
+                // Clear existing body and write encrypted body
+                responseDecorator.getDelegate().getHeaders().setContentLength(encryptedBytes.length);
+                
+                return responseDecorator.getDelegate().writeWith(Mono.just(buffer));
+            }
+            
+            return Mono.empty();
+            
+        } catch (Exception e) {
+            logger.error("Exception in encryptResponse method: {}", e.getMessage(), e);
+            return Mono.error(e);
+        }
+    }
+	@Override 
+	public int getOrder() { 
+		return 2; // run after routing 
+		}
+	
+	
+  
+  }

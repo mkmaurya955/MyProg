@@ -1,0 +1,89 @@
+Infosys
+======================================
+Rtgs outward(FIFI,CUS,OAT),neft outward(cus) cus -> pacs.008 and fifi pacs.009
+Gbs  -->  payment system as middleware ---> SFMS (RBI)
+
+Rtgs inward, Neft Inward-->pacs.008 and fifi pacs.009
+SFMS (IBM Mq) --> Payment Syatem as Middleware --> Gbs()
+
+
+
+config server
+
+Zuul server
+
+userservice
+
+notification
+
+payment service
+
+javaw -jar payment/payment.jar  syslog.log
+
+grafana
+
+server.port=8082
+
+select e.name, e.sal from emplyoee e inner join departmat d on e.departmentId = d.departmentId;
+
+List<Employee> evenId empl = emplist.stream().filter(e->e.getId%2==0).collect(Collectors.toList());
+
+create a bean for restTemplate
+================================
+@Bean
+public RestTemplate restTemplate(){
+return new RestTemplate();
+}
+
+in service
+============
+@Autowired
+private RestTemplate restTemplate;
+
+Employee emp =restTemplate.gettForObj("url", Object.class);
+
+
+String str = "madam";
+
+        String reversed = str.chars()
+                .mapToObj(c -> (char) c)
+                .collect(StringBuilder::new,
+                         StringBuilder::append,
+                         StringBuilder::append)
+                .reverse()
+                .toString();
+
+        boolean isPalindrome = str.equals(reversed);
+
+        System.out.println("Is palindrome: " + isPalindrome);
+=========================================
+Managerial Round
+=========================================
+public class TestHello {
+   private static int counter = 0;
+   void TestHello() {
+       counter = 20;
+   }
+   TestHello(int x){
+       counter = x;
+   }
+   TestHello(int x,int y){
+       counter = x;
+   }
+   TestHello(int x,int y,int z){
+       counter = y;
+   }
+ 
+ 
+   public static void main(String[] args) {
+       TestHello TestHello = new TestHello();
+       System.out.println(counter);
+   }
+}
+
+
+Write a regular expression to validate 10 digit mobile , which can start with either of 6,7,8,9
+
+===============================================================================
+
+

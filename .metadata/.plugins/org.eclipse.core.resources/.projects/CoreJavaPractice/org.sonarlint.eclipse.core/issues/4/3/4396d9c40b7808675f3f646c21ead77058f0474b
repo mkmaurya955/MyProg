@@ -1,0 +1,48 @@
+
+a
+java:S1481"&Remove this unused "c" local variable.8Ì×şÑ½2b 4a8a08f09d37b73795649038408b5f33h
+p
+java:S1854"5Remove this useless assignment to local variable "d".8’ş¾®½2b dbd85bebb0729fd93d455377fe5a900fh
+a
+java:S1481"&Remove this unused "x" local variable.8’ş¾®½2b 9dd4e461268c8034f5c8564e155c67a6h
+b
+java:S1481"'Remove this unused "db" local variable.8’ş¾®½2b d77d5e503ad1439f585ac494268b351bh
+q
+java:S1854"6Remove this useless assignment to local variable "db".8’ş¾®½2b 285b8f90fc576946d9907ae4dc4d0a2eh
+c
+java:S1481"(Remove this unused "d11" local variable.8ÑùÿÑ½2b 41012ddde92340324f2588ba57878686h
+b
+java:S1481"'Remove this unused "ch" local variable.8Ì×şÑ½2b d88fc6edf21ea464d35ff76288b84103h
+q
+java:S1854"6Remove this useless assignment to local variable "ch".8Ì×şÑ½2b c7afaa6f6e8e8faa936b6f84b0392128h
+a
+java:S1481"&Remove this unused "f" local variable.8’ş¾®½2b 8fa14cdd754f91cc6554c9e71929cce7h
+r
+java:S1854"7Remove this useless assignment to local variable "ch1".8Ì×şÑ½2b c7afaa6f6e8e8faa936b6f84b0392128h
+a
+java:S1481"&Remove this unused "d" local variable.8’ş¾®½2b 8277e0910d750195b448797616e091adh
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 2863bc264d070388a94111bc05f77f0fh
+p
+java:S1854"5Remove this useless assignment to local variable "f".8’ş¾®½2b e60da6dfddd73f69078325f4bf17c0f8h
+q
+java:S1854"6Remove this useless assignment to local variable "a1".8Ì×şÑ½2b 019be9f9ef1ae9efc5ec08153c18bfb5h
+v	java:S125"<This block of commented-out lines of code should be removed.8Ì×şÑ½2b 6c20fe4c8f4830e7e0d5ba0dfe7439ech
+p
+java:S1854"5Remove this useless assignment to local variable "a".8’ş¾®½2b 335f66f5fa76b30b784573b2b87d9afah
+c
+java:S1481"(Remove this unused "ch1" local variable.8Ì×şÑ½2b e26fd7c8b4fd8eafbb9f99a19a1c3701h
+b
+java:S1481"'Remove this unused "a1" local variable.8ÑùÿÑ½2b 8a8bb7cd343aa2ad99b7d762030857a2h
+p
+java:S1854"5Remove this useless assignment to local variable "x".8’ş¾®½2b 458ed1dd2db6f5943e0a9b45db913771h
+v	java:S125	"<This block of commented-out lines of code should be removed.8–­€Ò½2b 3c57029570c04607f6b5eb7aa230f196h
+b
+java:S1481"'Remove this unused "b1" local variable.8ÑùÿÑ½2b edbab45572c72a5d9440b40bcc0500c0h
+r
+java:S1854"7Remove this useless assignment to local variable "d11".8Ì×şÑ½2b dcc9f32946cdd5e9d609b8617d1fd7fbh
+q
+java:S1854"6Remove this useless assignment to local variable "b1".8Ì×şÑ½2b 739f396fa2fed98555827dd437738575h
+p
+java:S1854"5Remove this useless assignment to local variable "c".8Ì×şÑ½2b c53de50effe2b5fc553115b7908e4a1eh
+a
+java:S1481"&Remove this unused "a" local variable.8’ş¾®½2b 0cc175b9c0f1b6a831c399e269772661h

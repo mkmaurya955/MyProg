@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AddressSubreport" language="groovy" pageWidth="355" pageHeight="40" columnWidth="355" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f09f58bb-afd0-4397-91b1-0954bf41f738">
+	<field name="customerName" class="java.lang.String"/>
+	<field name="orderItems" class="java.util.List"/>
+	<detail>
+		<band height="60">
+			<textField>
+				<reportElement x="0" y="10" width="200" height="20" uuid="fde774b6-ab58-48b3-8b62-3f07765eaaf9"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$F{customerName}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="0" y="30" width="200" height="20" uuid="17f697d5-bc25-42de-adce-f7daf55efdcc"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$F{orderItems}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

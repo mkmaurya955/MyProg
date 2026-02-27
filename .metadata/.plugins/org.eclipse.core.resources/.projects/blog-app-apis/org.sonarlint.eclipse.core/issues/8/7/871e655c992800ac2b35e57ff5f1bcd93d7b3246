@@ -1,0 +1,28 @@
+
+ž
+java:S1488e"jImmediately return this expression instead of assigning it to the temporary variable "paginationResponse".b 50bfb2d552e586c5b158a3d91120b4edh
+ž
+java:S1488w"jImmediately return this expression instead of assigning it to the temporary variable "paginationResponse".b a9104e59c3d1007302a90299b56449b1h
+Ÿ
+java:S1488‡"jImmediately return this expression instead of assigning it to the temporary variable "paginationResponse".b d4bdb132707da6fab26ac9b59b6c12feh
+Ÿ
+java:S1488•"jImmediately return this expression instead of assigning it to the temporary variable "paginationResponse".b a9104e59c3d1007302a90299b56449b1h
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813""BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813%"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813("BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+o	java:S125D"<This block of commented-out lines of code should be removed.b bb79b12f9a059176266fb9ccaee94ab6h
+†
+java:S6204d"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'b f31c9542f92d797a57d6f9bafca179cdh
+f
+java:S1611c"2Remove the parentheses around the "post" parameterb 84c40473414caf2ed4a7b1283e48bbf4h
+†
+java:S6204v"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'b f31c9542f92d797a57d6f9bafca179cdh
+‡
+java:S6204†"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'b f31c9542f92d797a57d6f9bafca179cdh
+‡
+java:S6204”"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'b f31c9542f92d797a57d6f9bafca179cdh

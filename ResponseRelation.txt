@@ -1,0 +1,18 @@
+{
+    "studName" : "maurya",
+    "age":"22",
+    "courses":[
+        {
+        "courseType":"Tech",
+        "title":"JAVA",
+        "feeCouses":"3000",
+        "courseDesp":"This is java courses"
+        },
+        {
+        "courseType":"Tech",
+        "title":"Python",
+        "feeCouses":"4000",
+        "courseDesp":"This is python courses"
+        }
+    ]
+}

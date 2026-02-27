@@ -1,0 +1,10 @@
+
+server.port=1122
+spring.application.name=Question
+
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+spring.datasource.url=jdbc:oracle:thin:@10.255.64.175:1521:xe
+spring.datasource.username=LOCAL_DB
+spring.datasource.password=password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true

@@ -1,0 +1,5 @@
+
+server.port=1122
+spring.application.name=Question
+
+spring.datasource.schema=

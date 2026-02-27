@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BSR1" pageWidth="1400" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="df013db5-f76e-44d3-b0df-bcbc46d93160">
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true"/>
+	<style name="SubTitle" forecolor="#000000" fontName="Arial" fontSize="18"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="position" class="java.lang.String"/>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement x="0" y="0" width="200" height="20" uuid="467d80d9-f56e-42fa-bce4-6f5642f6716e"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="200" height="20" uuid="c1429e18-b226-4157-b947-1fac9fca909f"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$F{position}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

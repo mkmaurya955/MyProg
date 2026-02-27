@@ -1,0 +1,10 @@
+
+w
+java:S1128
+"<Remove this unused import 'jakarta.persistence.CascadeType'.8ªù«Õ‚2b d8b1e27f68d28c8cba3cbd778874872ch
+u
+java:S1128":Remove this unused import 'jakarta.persistence.FetchType'.8ªù«Õ‚2b 4bc5ebe9931f22ea9b0dfce6360a89e4h
+v
+java:S1128";Remove this unused import 'jakarta.persistence.JoinColumn'.8ªù«Õ‚2b 982abf4ba553106a2be4a92cbe1f6809h
+u
+java:S1128":Remove this unused import 'jakarta.persistence.OneToMany'.8ªù«Õ‚2b d3373328052e12853e0adfbebe9b9a13h

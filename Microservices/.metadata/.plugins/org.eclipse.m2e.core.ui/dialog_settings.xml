@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\MyProg\Microservices\ConfigServer"/>
+			<item value="D:\MyProg\Microservices\Gateway"/>
+			<item value="D:\MyProg\Microservices\descoveryserver"/>
+			<item value="D:\MyProg\Microservices\HotelService"/>
+			<item value="D:\MyProg\Microservices\RateService"/>
+			<item value="D:\MyProg\Microservices\UserService"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

@@ -1,0 +1,7 @@
+
+v
+java:S1119,";Refactor the code to remove this label and the need for it.8¨ïŒ›Í1b 9dd4e461268c8034f5c8564e155c67a6h
+j
+java:S1128"/Remove this unused import 'java.util.Optional'.8§ûÕ›Í1b 36b2b47c45feb274daab2613f5282eabh
+
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.8à×«Í1b d9065b7fbaa56920a9be28b6ab095b53h

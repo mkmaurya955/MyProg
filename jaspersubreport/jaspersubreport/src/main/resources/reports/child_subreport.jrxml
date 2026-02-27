@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ChildSubreport" pageWidth="200" pageHeight="100" columnWidth="180" leftMargin="10" rightMargin="10" topMargin="10" bottomMargin="10" uuid="c0c2ce28-27f3-4b25-bec7-c4e1d68b9fab">
+	<field name="childName" class="java.lang.String"/>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement x="0" y="0" width="180" height="20" uuid="66777eb2-47bd-4881-bb6c-9fd96f618ca3"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$F{childName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

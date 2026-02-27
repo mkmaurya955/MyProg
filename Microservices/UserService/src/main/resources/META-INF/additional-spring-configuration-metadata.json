@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "eureka.instance.fetch-registry",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.instance.fetch-registry'"
+  },
+  {
+    "name": "spring.cloud.config.import-check.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloud.config.import-check.enabled'"
+  },
+  {
+    "name": "eureka.instance.register-with-eureka",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.instance.register-with-eureka'"
+  }
+]}

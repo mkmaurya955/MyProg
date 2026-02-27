@@ -1,0 +1,26 @@
+
+ó
+java:S1488J"cImmediately return this expression instead of assigning it to the temporary variable "allUserDtos".b 7bc8730e996d56bf08027567274792b2h
+ê
+java:S1488Y"\Immediately return this expression instead of assigning it to the temporary variable "user".b 719d7bf90705e107f72226a742f5838fh
+ì
+java:S1488b"_Immediately return this expression instead of assigning it to the temporary variable "userDto".b f9cee8444db22278d652855704a33b74h
+o	java:S125"<This block of commented-out lines of code should be removed.b 49efc027af9bbbb4a2c02efebf1af7d0h
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813!"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813$"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+o	java:S125"<This block of commented-out lines of code should be removed.b 8a78175b61354b3074b5ece53daf4ad2h
+o	java:S125*"<This block of commented-out lines of code should be removed.b 77ccb738cec4fe679799d122435914d1h
+Ü
+java:S6204J"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'b f31c9542f92d797a57d6f9bafca179cdh
+t
+java:S1612J"@Replace this lambda with method reference 'this::userToUserDto'.b b4d414045ddc319a7da99472065d3b35h
+o	java:S125P"<This block of commented-out lines of code should be removed.b db3275355a3a2dc294fe710d9ae407dah
+o	java:S125Z"<This block of commented-out lines of code should be removed.b 0c1d1d070dbc67f0e3ba35775b3df5ddh
+o	java:S125c"<This block of commented-out lines of code should be removed.b 31ce95954a8226ade4adc6247eb2ab77h
+o	java:S125m"<This block of commented-out lines of code should be removed.b b84ac5f9c73beeb27bb280ed63c705fah

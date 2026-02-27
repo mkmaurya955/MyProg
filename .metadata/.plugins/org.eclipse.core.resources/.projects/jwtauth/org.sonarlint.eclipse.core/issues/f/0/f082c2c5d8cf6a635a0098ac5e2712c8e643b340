@@ -1,0 +1,13 @@
+
+v
+java:S18743";Remove this use of "NoOpPasswordEncoder"; it is deprecated.8È€2b 2a38589299514aba2c2d53051a93b6c2h
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8¨ª€2b 0132ec8cee01c5dd244e1a60fe6448a1h
+u
+java:S11616":Add the "@Override" annotation above this method signature8ø–•€2b 1a4b858ee431eed2addd3228bfb5c254h
+y
+java:S5344">Don't use the default "PasswordEncoder" relying on plain-text.8¨ª€2b e88df77b22fbd521f11453b952d3362dh
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8î¬‘€2b 0132ec8cee01c5dd244e1a60fe6448a1h
+
+java:S1874"DRemove this use of "WebSecurityConfigurerAdapter"; it is deprecated.8º€‘€2b ad881c17eca8946c997410ffbc1611f4h

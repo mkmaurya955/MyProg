@@ -1,0 +1,38 @@
+package com.question.serviceimpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.question.entity.Question;
+import com.question.repository.QuestionRepository;
+import com.question.service.QuestionService;
+
+@Service
+public class QuestionServiceImpl implements QuestionService{
+	
+	@Autowired
+	private QuestionRepository questionRepository;
+
+	@Override
+	public Question createQuestion(Question question) {
+		return questionRepository.save(question);
+	}
+
+	@Override
+	public List<Question> getAllQuestion() {
+		return questionRepository.findAll();
+	}
+
+	@Override
+	public Question getQuestionById(Long id) {
+		return questionRepository.findById(id).orElseThrow(()-> new RuntimeException("Question is bot found..!!"));
+	}
+
+	@Override
+	public List<Question> getAllQuestionByQuizId(Long quizId) {
+		return questionRepository.findByQuizId(quizId);
+	}
+
+}
